@@ -8,7 +8,7 @@ A continuacion las funcionalidades por cada tab:
 
 "HOME": Permite entender cual es el proposito de la pagina y permite navegar entre las distintas otras tabs con hypervinculos.
 
-"BUSQUEDA": Permite buscar los ingredientes ya registrados en la base de datos de "Ingredientes".
+"BUSQUEDA": Permite buscar SOLO los ingredientes ya registrados en la base de datos de "Ingredientes".
 
 "INGREDIENTES": Permite agregar a la base de datos un ingrediente.
 
