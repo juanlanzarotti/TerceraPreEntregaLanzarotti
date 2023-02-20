@@ -1,0 +1,18 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<br>
+<h1 style="color: #808080; font-weight: bold; text-align: center;">Agregar nuevo ingrediente a la database</h1>
+
+<form method='POST'>
+    
+    {% csrf_token %}
+    <br>
+    {{form.as_p}}
+    <button>
+        Guardar Ingrediente
+    </button>    
+
+</form>
+
+{% endblock %}

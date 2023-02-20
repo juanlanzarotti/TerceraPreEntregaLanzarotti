@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<h1 style="color: #808080; font-weight: bold; text-align: center;">Consulta en base de datos</h1>
+
+<form action="{% url 'search_ingredients' %}" method="GET">
+    <label for="query" style="color: #808080;">Buscar:</label>
+    <input type="text" id="query" name="q" required>
+    <button type="submit">Buscar</button>
+</form>
+
+<br>
+{% if Ingredients %}
+    <h8 style="color: #808080; font-weight: bold;">Resultados de la búsqueda:</h8>
+    <div style="color: #808080;">
+        <ul>
+            {% for ingrediente in Ingredients %}
+                <li>Ingrediente: {{ ingrediente.name }} - Descripcion: {{ ingrediente.description }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% else %}
+    <h8 style="color: #808080; font-weight: bold;">Sin resultados</h8>
+
+    {% endif %}
+
+{% endblock %}
